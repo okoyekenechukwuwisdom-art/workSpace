@@ -1,0 +1,43 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from './assets/vite.svg'
+import heroImg from './assets/hero.png'
+import './App.css'
+import ProfileCard from './components/profileCard'
+import anambraLogo from "./assets/Anambra.png"
+import LikeButton from './components/LikeButton'
+import Counter from './components/counter'
+import StudentsData from './components/StudentsData'
+import SignUpForm from './components/SignUpForm'
+import Posts from './components/Posts'
+
+
+function App() {
+
+  const myName = "John Doe"
+  const [isDarkMode, setIsDarkMode] = useState(false)
+
+  const toggleDarkMode = () => {
+    setIsDarkMode((prev) => !prev)
+  }
+
+  return (
+    <div className={`App p-6  h-screen bg-[#f0f0f0]`}>
+      
+
+      {/*<SignUpForm/>*/}
+      <Posts/>
+       {/*<ProfileCard name= "Kene" role="Frontend Developer" age="35" profileImg={anambraLogo}/>
+      <ProfileCard name= "Okoye" role="Frontend Developer" age="29" profileImg={heroImg}/>
+      <ProfileCard name= "Wisdom" role="Frontend Developer" age="44" profileImg={anambraLogo}/> 
+
+      <LikeButton/>
+
+     <Counter/>}
+      <StudentsData/>*/}
+      
+    </div>
+  )
+    
+}
+export default App
