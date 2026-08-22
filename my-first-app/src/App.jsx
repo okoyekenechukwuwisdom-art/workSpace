@@ -25,16 +25,17 @@ function App() {
     <div className={`App p-6  h-screen bg-[#f0f0f0]`}>
       
 
-      {/*<SignUpForm/>*/}
-      <Posts/>
+      {/*<SignUpForm/>
+      <Posts/>*/}
        {/*<ProfileCard name= "Kene" role="Frontend Developer" age="35" profileImg={anambraLogo}/>
       <ProfileCard name= "Okoye" role="Frontend Developer" age="29" profileImg={heroImg}/>
       <ProfileCard name= "Wisdom" role="Frontend Developer" age="44" profileImg={anambraLogo}/> 
 
+      <Counter/>
       <LikeButton/>
-
-     <Counter/>}
+     }
       <StudentsData/>*/}
+      
       
     </div>
   )
