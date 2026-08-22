@@ -6,7 +6,9 @@ const Posts = () => {
     //fetch or axios is used to make HTTP requests to a server or an API endpoint. it allows you to retrieve data from a server, send data to a server, or perform other operations related to network communication.
 
 
-    const fetchPosts = async () => {
+    
+    useEffect(() => {
+         const fetchPosts = async () => {
         try {
             const response = await fetch('https://jsonplaceholder.typicode.com/posts')
             const data = await response.json()
@@ -17,7 +19,8 @@ const Posts = () => {
             console.log(error, 'error from fetchPosts');
         }
     }
-    fetchPosts()
+        fetchPosts()
+    }, [])
   return (
     <div>
       
