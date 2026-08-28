@@ -10,6 +10,7 @@ import Counter from './components/counter'
 import StudentsData from './components/StudentsData'
 import SignUpForm from './components/SignUpForm'
 import Posts from './components/Posts'
+import { Routes } from 'react-router-dom'
 
 
 function App() {
@@ -22,10 +23,12 @@ function App() {
   }
 
   return (
-    <div className={`App p-6  h-screen bg-[#f0f0f0]`}>
-      
+    
+   /*  <Route path='/post' element = {<Posts/>}></Route> */
+   <div className={`App p-6  h-screen bg-[#f0f0f0]`}>
      <Posts/>
-      {/*<SignUpForm/>
+      {/* <SignUpForm/>
+      
       
       <ProfileCard name= "Kene" role="Frontend Developer" age="35" profileImg={anambraLogo}/>
       <ProfileCard name= "Okoye" role="Frontend Developer" age="29" profileImg={heroImg}/>
@@ -33,8 +36,9 @@ function App() {
 
       <Counter/>
       <LikeButton/>
-      <StudentsData/>*/}
+      <StudentsData/> */}
     </div>
+    
   )
     
 }
