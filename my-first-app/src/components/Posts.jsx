@@ -21,9 +21,10 @@ const Posts = () => {
     //payload is the data that is sent to the server in an HTTP request. it can be in the form of JSON, XML, or other formats, and it contains the information that the server needs to process the request.
     //react router.
 
-    //context API: 
+    //context API: is a way to share data between components in a React application without having to pass props down through every level of the component tree. it allows you to create a global state that can be accessed by any component in the application, regardless of its position in the component hierarchy.
     //PROP: The context sent through parent component to the component
     //PROP DRILLING: passing properties through components in REACT.
+    //  context API prevent us from having to pass props down through multiple levels of components, which can make the code more complex and harder to maintain. instead, we can use the context API to create a global state that can be accessed by any component in the application.
     
     const fetchPosts = async () =>{
    try {
